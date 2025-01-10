@@ -1,0 +1,24 @@
+<html>
+    <!--
+Name: Joel Gabud
+File: indexexample
+Date: 6 January 2025
+This is my very first example document for INFT 1206!
+It's just me nerding out. :-/
+(INFT1206)
+-->
+<head>
+<title>Joel's dinosaur factoids</title>
+</head>
+<body>
+
+<!-- This is how ya' write comments! -->
+
+<h1>Startin' out.</h1>
+<p>This goes over dinosaurs n' stuff. Cool!</p>
+<p>A big part of understanding dinosaurs is the super-family that is <b>Avemetatarsalia.</b> This is the phylogenetical group that includes the non-avian dinosaurs as well as the archosaurs that are closest to birds.</p>
+<p>This group not only includes the non-avian dinosaurs, but also the non-dinosaurian flying reptiles known as the <b>Pterosaurs</b>! Both of these groups were the main ones that survived past the Triassic and flourished afterwards.</p>
+<cite>Source: Wikipedia page for Avemetatarsalia.</cite>
+
+</body>
+</html>
