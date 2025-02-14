@@ -3,3 +3,22 @@ html {
 }
 
 /* Your CSS below here */
+.cool-box {
+  width: 200px; /* A reasonable width for a large box */
+  height: 200px; /* A reasonable height for a large box */
+  display: flex; /* Use flexbox to center content vertically and horizontally */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  margin: 0 auto; /* Center the box horizontally */
+  font-size: 1.125rem; /* 1.125rem is equivalent to 18px, assuming the root font size is 16px */
+  /* Font size calculated as 18px / 16px = 1.125rem */
+  background-color: #4CAF50; /* Base color for the design */
+  color: #ffffff; /* Contrasting color for the text */
+  text-shadow: 1px 1px 0 #000000; /* Black text shadow */
+  border-radius: 10px; /* Fairly subtle border radius */
+  border: 1px solid #388E3C; /* 1-pixel solid border with a slightly darker shade of the base color */
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%); /* Linear semi-transparent black gradient */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), /* Standard box shadow to make the box look slightly raised */
+              inset 5px 5px 10px rgba(255, 255, 255, 0.5), /* Inset semi-transparent white shadow near the top left */
+              inset -5px -5px 10px rgba(0, 0, 0, 0.5); /* Inset semi-transparent black shadow near the bottom right */
+}
