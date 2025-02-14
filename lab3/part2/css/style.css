@@ -1,21 +1,19 @@
 html {
   font-family: sans-serif;
 }
-
-/* Your CSS below here */
 .cool-box {
-  width: 200px; /* Reasonable width */
-  height: 200px; /* Reasonable height */
+  width: 200px;
+  height: 200px;
   display: flex;
-  align-items: center; /* Center text vertically */
-  justify-content: center; /* Center text horizontally */
-  margin: 0 auto; /* Center the box horizontally */
-  font-size: 1.125rem; /* 17-18 pixels, 17/16 = 1.0625rem to 18/16 = 1.125rem */
-  background-color: #00bfff; /* Base color */
-  color: #ffffff; /* Contrasting color */
-  text-shadow: 1px 1px 1px #000000; /* Black text shadow */
-  border-radius: 8px; /* Subtle border radius */
-  border: 1px solid #009ac6; /* 1-pixel solid border with darker shade of base color */
-  background: linear-gradient(45deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 30%, rgba(0,0,0,0.2) 100%); /* Linear gradient */
-  box-shadow: 4px 4px 8px rgba(0,0,0,0.2), inset 1px 1px 5px rgba(255,255,255,0.5), inset -1px -1px 5px rgba(0,0,0,0.5); /* Box shadows */
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 1.125rem;
+  background-color: #00bfff;
+  color: #ffffff;
+  text-shadow: 1px 1px 1px #000000;
+  border-radius: 8px;
+  border: 1px solid #009ac6;
+  background: linear-gradient(45deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.2) 30%, rgba(0,0,0,0.2) 100%);
+  box-shadow: 4px 4px 8px rgba(0,0,0,0.2), inset 1px 1px 5px rgba(255,255,255,0.5), inset -1px -1px 5px rgba(0,0,0,0.5);
 }
