@@ -56,5 +56,5 @@ a[href^="http"]::after {
   margin-left: 0.25em;
 
   background-size: 100%;
-  background-image: url("external-link-52.png");
+  background-image: url("../images/external-link-52.png");
 }
