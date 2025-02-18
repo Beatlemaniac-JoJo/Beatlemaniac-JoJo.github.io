@@ -1,107 +1,97 @@
-/* General setup */
 
-* {
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <!--
+      Name: Joel Gabud
+      File: Lab 3 Layout.html
+      Date: 18 February 2025
+      Description: Creating the layout and design for a webpage with the provided CSS.
+    -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Lab 3 - Layout</title>
+  <link href="./css/style.css" rel="stylesheet" type="text/css"> 
+  </head>
 
-body {
-  margin: 0 auto;
-  min-width: 1000px;
-  max-width: 1400px;
-  font-family: 'Roboto Light', sans-serif;
-}
+<body>
 
-/* Layout */
+  <div class="logo">
+    My exciting website!
+  </div>
 
-section {
-  float: left;
-  width: 50%;
-}
+  <nav>
+    <ul>
+      <li>
+        <a href="">Home</a>
+      </li>
+      <li>
+        <a href="">Blog</a>
+      </li>
+      <li>
+        <a href="">About us</a>
+      </li>
+      <li>
+        <a href="">Our history</a>
+      </li>
+      <li>
+        <a href="">Contacts</a>
+      </li>
+    </ul>
+  </nav>
 
-aside {
-  float: left;
-  width: 30%;
-}
+  <main class="grid">
+    <article>
+      <h1>
+        An Exciting Blog Post
+      </h1>
+      <img src="images/balloon-sq6.jpg" alt="placeholder" class="feature">
+      <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon
+        azuki bean garlic.</p>
 
-nav {
-  float: left;
-  width: 20%;
-}
+      <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens
+        dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
 
-footer {
-  clear: both;
-}
+      <p>Turnip greens yarrow ricebean rutabaga endive cauliflower sea lettuce kohlrabi amaranth water spinach avocado daikon
+        napa cabbage asparagus winter purslane kale. Celery potato scallion desert raisin horseradish spinach carrot soko.
+        Lotus root water spinach fennel kombu maize bamboo shoot green bean swiss chard seakale pumpkin onion chickpea gram
+        corn pea. Brussels sprout coriander water chestnut gourd swiss chard wakame kohlrabi beetroot carrot watercress.
+        Corn amaranth salsify bunya nuts nori azuki bean chickweed potato bell pepper artichoke.</p>
 
-header, section, aside, nav, footer {
-  padding: 20px;
-}
+      <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie
+        turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki
+        bean earthnut pea sierra leone bologi leek soko chicory celtuce parsley jícama salsify.</p>
 
-/* header and footer */
+      <p>Celery quandong swiss chard chicory earthnut pea potato. Salsify taro catsear garlic gram celery bitterleaf wattle
+        seed collard greens nori. Grape wattle seed kombu beetroot horseradish carrot squash brussels sprout chard.</p>
 
-header, footer {
-  border-top: 5px solid #a66;
-  border-bottom: 5px solid #a66;
-}
+    </article>
 
-body {
-  width: 300px;
-  margin: 0 auto;
-}
+    <aside>
+      <h2>
+        Photography
+      </h2>
+      <ul class="photos">
+        <li>
+          <img src="images/balloon-sq1.jpg" alt="placeholder">
+        </li>
+        <li>
+          <img src="images/balloon-sq2.jpg" alt="placeholder">
+        </li>
+        <li>
+          <img src="images/balloon-sq3.jpg" alt="placeholder">
+        </li>
+        <li>
+          <img src="images/balloon-sq4.jpg" alt="placeholder">
+        </li>
+        <li>
+          <img src="images/balloon-sq5.jpg" alt="placeholder">
+        </li>
+      </ul>
 
-a[href^="http"]::after {
-  content: "";
-  display: inline-block;
-  width: 0.8em;
-  height: 0.8em;
-  margin-left: 0.25em;
-  background-size: 100%;
-  background-image: url("../images/external-link-52.png");
-}
+    </aside>
+  </main>
 
-/* Fonts */
+</body>
 
-@font-face {
-  font-family: 'Nexa Heavy';
-  src: url('../fonts/NexaHeavy-Regular.woff2') format('woff2'),
-       url('../fonts/NexaHeavy-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Roboto Light';
-  src: url('../fonts/RobotoLight-Regular.woff2') format('woff2'),
-       url('../fonts/RobotoLight-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-h1, h2 {
-  font-family: 'Nexa Heavy', sans-serif;
-}
-
-p {
-  font-family: 'Roboto Light', sans-serif;
-  font-weight: normal;
-}
-
-/* Navigation menu as boxes on the right */
-
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  background-color: #f0f0f0;
-  margin-bottom: 15px; /* Enlarged the margin for larger boxes */
-  padding: 15px; /* Enlarged the padding for larger boxes */
-  border: 3px solid #a66; /* Border similar to headers and footers but not as exaggerated */
-  text-align: center;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #000;
-  display: block;
-}
+</html>
