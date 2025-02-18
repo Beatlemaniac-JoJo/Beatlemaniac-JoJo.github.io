@@ -55,23 +55,23 @@ a[href^="http"]::after {
   height: 0.8em;
   margin-left: 0.25em;
   background-size: 100%;
-  background-image: url("../images/external-link-52.png");
+  background-image: url("./images/external-link-52.png");
 }
 
 /* Fonts */
 
 @font-face {
   font-family: 'Roboto Condensed';
-  src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
-       url('../fonts/RobotoCondensed-Regular.woff') format('woff');
+  src: url('./fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+       url('./fonts/RobotoCondensed-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Nexa Extra Light';
-  src: url('../fonts/NexaExtraLight-Regular.woff2') format('woff2'),
-       url('../fonts/NexaExtraLight-Regular.woff') format('woff');
+  src: url('./fonts/NexaExtraLight-Regular.woff2') format('woff2'),
+       url('./fonts/NexaExtraLight-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
