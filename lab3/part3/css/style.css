@@ -60,8 +60,21 @@ a[href^="http"]::after {
 
 /* Fonts */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nexa+Extra+Light&display=swap');
+@font-face {
+  font-family: 'Roboto Condensed';
+  src: url('../fonts/RobotoCondensed-Regular.woff2') format('woff2'),
+       url('../fonts/RobotoCondensed-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nexa Extra Light';
+  src: url('../fonts/NexaExtraLight-Regular.woff2') format('woff2'),
+       url('../fonts/NexaExtraLight-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 h1 {
   font-family: 'Roboto Condensed', sans-serif;
