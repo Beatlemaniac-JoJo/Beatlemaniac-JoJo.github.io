@@ -8,6 +8,7 @@ body {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
+  font-family: sans-serif;
 }
 
 /* Layout */
@@ -45,7 +46,6 @@ header, footer {
 body {
   width: 300px;
   margin: 0 auto;
-  font-family: sans-serif;
 }
 
 a[href^="http"]::after {
@@ -54,7 +54,19 @@ a[href^="http"]::after {
   width: 0.8em;
   height: 0.8em;
   margin-left: 0.25em;
-
   background-size: 100%;
   background-image: url("../images/external-link-52.png");
+}
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nexa+Extra+Light&display=swap');
+
+h1 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+h2 {
+  font-family: 'Nexa Extra Light', sans-serif;
 }
