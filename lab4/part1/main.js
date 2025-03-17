@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
+const storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
 
 let insertX = [
 	"Willy the Goblin",
@@ -28,19 +28,21 @@ let insertZ = [
 ];
 
 randomize.addEventListener('click', result);
-
+let newStory = storyText;
 function result() {
 
-alert(customName); 
   if(customName.value !== '') {
     const name = customName.value;
-	newStory = newStory.replaceAll("Bob", name);  
+    newStory = newStory.replaceAll("Bob", name);  
 
   }
 
   if(document.getElementById("uk").checked) {
-    const weight = Math.round(300);
-    const temperature =  Math.round(94);
+    const weight = Math.round(300 * 0.07142) + " stones";
+    const temperature =  Math.round((94 - 32) / 1.8) + " centigrade";
+    newStory = newStory.replace("300 pounds", weight);  
+    newStory = newStory.replace("94 fahrenheit", temperature);  
+
 	  
 
   }
@@ -49,7 +51,6 @@ alert(customName);
   story.style.visibility = 'visible';
 }
 
-let newStory = storyText;
 
 xItem = randomValueFromArray(insertX);
 yItem = randomValueFromArray(insertY);
