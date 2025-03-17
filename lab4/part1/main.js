@@ -31,18 +31,21 @@ randomize.addEventListener('click', result);
 
 function result() {
 
+alert(customName); 
   if(customName.value !== '') {
     const name = customName.value;
+	newStory = newStory.replaceAll("Bob", name);  
 
   }
 
   if(document.getElementById("uk").checked) {
     const weight = Math.round(300);
     const temperature =  Math.round(94);
+	  
 
   }
 
-  story.textContent = ;
+  story.textContent = newStory;
   story.style.visibility = 'visible';
 }
 
@@ -55,3 +58,4 @@ zItem = randomValueFromArray(insertZ);
 newStory = newStory.replaceAll(":insertx:", xItem);
 newStory = newStory.replaceAll(":inserty:", yItem);
 newStory = newStory.replaceAll(":insertz:", zItem);
+
