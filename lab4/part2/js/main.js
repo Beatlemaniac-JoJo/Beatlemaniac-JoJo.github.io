@@ -23,12 +23,19 @@ const imageAlternatives = [
 ];
 
 /* Looping through images */
-for(let i = 0; i < imageNames.length; i++)
-{
-	const newImage = document.createElement('img');
-	newImage.setAttribute('src', imageNames[i]);
-	newImage.setAttribute('alt', imageAlternatives[i]);
-	thumbBar.appendChild(newImage);
+for (let i = 0; i < imageNames.length; i++) {
+    const newImage = document.createElement('img'); // Create a new img element
+    newImage.setAttribute('src', imageNames[i]); // Set the src attribute to the file path
+    newImage.setAttribute('alt', imageAlternatives[i]); // Set the alt attribute for accessibility
+    thumbBar.appendChild(newImage); // Append the new img to the thumb-bar
+
+// Add click event listener to the current newImage
+newImage.addEventListener('click', () => {
+displayedImage.src = newImage.src; // Update src
+displayedImage.alt = newImage.alt; // Update alt
+	});
+}
+
 }
 /* Wiring up the Darken/Lighten button */
 btn.addEventListener('click', () => {
