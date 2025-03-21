@@ -31,8 +31,8 @@ for(let i = 0; i < imageNames.length; i++)
 
 // Add click event listener to the current newImage
 newImage.addEventListener('click', () => {
-displayedImage.src = newImage.src; // Update src
-displayedImage.alt = newImage.alt; // Update alt
+	displayedImage.src = newImage.src; // Update src
+	displayedImage.alt = newImage.alt; // Update alt
 	});
 }
 
