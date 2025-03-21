@@ -13,8 +13,6 @@ const imageNames = [
       "images/pic5.jpg"
 ];
       
-
-
 /* Declaring the alternative text for each image file */
 const imageAlternatives = [
       "Closeup on an eye",
