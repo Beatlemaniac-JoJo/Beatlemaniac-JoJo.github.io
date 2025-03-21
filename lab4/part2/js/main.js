@@ -31,15 +31,3 @@ for(let i = 0; i < imageNames.length; i++)
 	thumbBar.appendChild(newImage);
 }
 /* Wiring up the Darken/Lighten button */
-for (let i = 0; i < imageNames.length; i++) {
-    const newImage = document.createElement('img');
-    newImage.setAttribute('src', imageNames[i]);
-    newImage.setAttribute('alt', imageAlternatives[i]);
-    thumbBar.appendChild(newImage);
-
-    // Add click event listener to the current newImage
-    newImage.addEventListener('click', () => {
-        displayedImage.src = newImage.src; // Update src
-        displayedImage.alt = newImage.alt; // Update alt
-    });
-}
