@@ -15,10 +15,6 @@ function randomRGB() {
   return `rgb(${random(0, 255)},${random(0, 255)},${random(0, 255)})`;
 }
 
-// Reference to the paragraph and ball count variable
-const ballCountParagraph = document.querySelector("p"); // Reference to the paragraph element
-let ballCount = 0; // Tracks the current number of balls on screen
-
 // Define Shape class
 class Shape {
   constructor(x, y, velX, velY) {
@@ -141,8 +137,6 @@ class EvilCircle extends Shape {
 
         if (distance < this.size + ball.size) {
           ball.exists = false; // Ball "eaten" by evil circle
-          ballCount--; // Decrease ball count
-          ballCountParagraph.textContent = `Ball count: ${ballCount}`; // Update the paragraph
         }
       }
     }
@@ -164,8 +158,6 @@ while (balls.length < 25) {
   );
 
   balls.push(ball);
-  ballCount++; // Increase ball count
-  ballCountParagraph.textContent = `Ball count: ${ballCount}`; // Update the paragraph
 }
 
 // Instantiate EvilCircle
