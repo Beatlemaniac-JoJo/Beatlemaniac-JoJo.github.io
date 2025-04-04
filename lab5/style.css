@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #fbc9ff;
+  background-color: #ffd1ff;
 }
 
 body {
@@ -65,7 +65,7 @@ article {
 
 div[class="nav"] {
   height: 50px;
-  background-color: ff80ff;
+  background-color: #ffd1ff;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
@@ -139,7 +139,7 @@ footer {
 
 table {
   width: 100%;
-  background-color: #fbc9ff;
+  background-color: #ffd1ff;
   border-collapse: collapse;
 }
 
