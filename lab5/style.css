@@ -7,7 +7,7 @@ html, body {
 
 html {
   font-size: 10px;
-  background-color: #ffd1ff;
+  background-color: #dde;
 }
 
 body {
@@ -65,7 +65,7 @@ article {
 
 div[class="nav"] {
   height: 50px;
-  background-color: #ffd1ff;
+  background-color: #c7efff;
   display: flex;
   padding: 1% 0;
   margin-bottom: 10px;
