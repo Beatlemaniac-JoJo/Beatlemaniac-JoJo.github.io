@@ -19,7 +19,7 @@ body {
 /* || typography */
 
 font[size="7"], font[size="6"], font[size="5"] {
-  font-family: 'Open Sans Condensed', cursive;
+  font-family: 'Sonsie One', cursive;
   color: #2a2a2a;
 }
 
@@ -52,7 +52,7 @@ p, li, table {
 /* || header layout */
 
 div[class="nav"], article, footer, .secondary {
-  background-color: grey;
+  background-color: white;
 }
 
 article, footer, .secondary {
